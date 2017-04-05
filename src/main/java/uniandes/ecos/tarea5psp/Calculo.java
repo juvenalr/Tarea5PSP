@@ -53,8 +53,16 @@ public class Calculo
      * @return valor de la funcion gamma
      */
     public double calcularFuncionGamma(double numerador, double denominador)
-    {
-      ArrayList<Double> sumafraccion = operarSumaFraccionesEntero(numerador,denominador,-1.0);
+    { 
+      ArrayList<Double> sumafraccion;
+      if (numerador % denominador ==0)
+      {
+         sumafraccion= operarSumaFraccionesEntero(numerador/denominador,1,-1.0);
+      }
+      else
+      {
+          sumafraccion= operarSumaFraccionesEntero(numerador,denominador,-1.0);
+      }
       double suma = sumafraccion.get(0)/ sumafraccion.get(1);
       if(suma ==1.0)
       {
@@ -98,11 +106,13 @@ public class Calculo
      */
     public double calcularSegundaParteFuncion(double xi, int gradosLibertad)
     {
-        double exponente = ((gradosLibertad +1)/2) *-1.0;
-        double base = 1.0 + (Math.pow(xi,2)/gradosLibertad);
+        double exponente = ((gradosLibertad +1)/2.0) *-1.0;
+        double base = 1.0 + (Math.pow(xi,2.0)/gradosLibertad);
         return Math.pow(base, exponente);
     
     }
+    
+  
     
     /**
      * calcula la sumatoria impar de la funcion p

@@ -25,7 +25,7 @@ public class Vista
          String encabezado = " <!DOCTYPE html> <html> <body>";
          String tablaInicio = "<table style=\"width:100%\">";
          String columnasEncabezado=  "<tr> <th>x</th> <th>dof</th> <th>pValue</th>  </tr>";
-         String valores ="<b>NUMERO: "+mapaIntervalos.size()+"</b>";
+         String valores ="";
          for (Map.Entry<String,ArrayList<String>> dato : mapaIntervalos.entrySet())
          {
           valores = valores + " <tr> "  + "<td>x= " + dato.getValue().get(1) + "</td>"  + "<td>"+ dato.getValue().get(2) + "</td>" + "<td>" + dato.getValue().get(3) + "</td> </tr>";

@@ -46,8 +46,8 @@ public class TestCalculos {
      public void testcalcularFuncionGamma()
      {
        Calculo cal = new Calculo();
-       Double gama = cal.calcularFuncionGamma(9, 2);
-       assertEquals(11.63173,gama,0.00001);      
+       Double gama = cal.calcularFuncionGamma(10, 2.0);
+       assertEquals(24,gama,0.00001);      
        
      }
    
@@ -55,8 +55,8 @@ public class TestCalculos {
      public void testcalcularPrimeraParteFuncion()
      {
        Calculo cal = new Calculo();
-       Double funcion = cal.calcularPrimeraParteFuncion(9);
-       assertEquals(0.388035,funcion,0.00001);      
+       Double funcion = cal.calcularPrimeraParteFuncion(10);
+       assertEquals(0.3891084,funcion,0.00001);      
        
      }
      
@@ -66,11 +66,12 @@ public class TestCalculos {
        Calculo cal = new Calculo();
        Double funcion = cal.calcularSegundaParteFuncion(0.99, 9);
        assertEquals(0.5964,funcion,0.00001);  
-       funcion = cal.calcularSegundaParteFuncion(0.77, 9);
-       assertEquals(0.72688,funcion,0.00001);   
+       funcion = cal.calcularSegundaParteFuncion(0.11812, 10);
+       assertEquals(0.992360892,funcion,0.00001);   
        
      }
      
+  
       @Test 
      public void testcalcularSumatoriaImpar()
      {
@@ -98,8 +99,8 @@ public class TestCalculos {
      {        
        Calculo cal = new Calculo();
        
-       Double funcion = cal.calcularValorP(1.1, 10, 9);
-       assertEquals(0.3500589,funcion,0.0001);        
+       Double funcion = cal.calcularValorP(1.1812, 10, 10);
+       assertEquals(0.367573746,funcion,0.0001);        
        
      }
      
@@ -110,6 +111,10 @@ public class TestCalculos {
        
        Double funcion = cal.estimarValorP(1.1, 10, 9, 0.00001);
        assertEquals(0.35005864,funcion,0.0001);        
-       
+        funcion = cal.estimarValorP(1.1812, 10,10 , 0.00001);
+        assertEquals(0.36757,funcion,0.0001);    
+        funcion = cal.estimarValorP(2.750, 10, 30, 0.00001);
+        assertEquals(0.49500,funcion,0.0001);       
+
      }
 }
