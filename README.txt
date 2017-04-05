@@ -18,7 +18,7 @@
 	
 	* ejecute el comando >git clone https://github.com/juvenalr/Tarea5PSP.git
     
-	* ubíquese dentro de la carpeta Tarea_PSP2-master > cd Tarea5PSP
+	* ubíquese dentro de la carpeta TareaPSP-master
 	
 	* cree un app heroku > heroku create
 	   Nota: deberá contar con una cuenta Heroku y haber instalado Heroku CLI en si equipo (https://devcenter.heroku.com/articles/getting-started-with-java#set-up)
