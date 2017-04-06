@@ -5,6 +5,7 @@
 - 05/04/2017
 
 -ruta GitHub https://github.com/juvenalr/Tarea5PSP.git
+-Los archivos java doc se encuentarn en src/site
 - Instrucciones para ejecutar el programa
     
 	
